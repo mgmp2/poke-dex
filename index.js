@@ -2,7 +2,7 @@
 
 const render = (root) => {
   root.empty();
-  const wrapper = $('<div class="wrapper"></div>');
+  const wrapper = $('<div class="wrapper container"></div>');
   wrapper.append(Header(_ => render(root)));
 
   if(state.selectedPokemon == null ) {

@@ -1,39 +1,57 @@
+@font-face {
+    font-family: 'Flexo';
+    src: url("../font/Flexo/Flexo-Regular.otf");
+}
 * {
   margin:0px;
   padding:0px;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
 }
-
-header {
-  color: #fff;
-  font-size: 18px;
-  height: 56px;
-  line-height: 56px;
-  padding-left: 16px;
-  background-color: #F44336;
+h1 {
+  font-family: 'Flexo';.style-title
 }
 
 header .fa-chevron-left {
   margin-right: 16px;
 }
 #result {
-    padding: 21px 140px;
+    padding: 21px 70px;
 }
-#search .item {
+#result .item {
+    width: 133px;
     display: inline-block;
-    width: 210px;
-    height: 245px;
     background: #e5e5e5;
-    margin-right: 14px;
-    margin-left: 14px;
-}
-
-#search .trapecio {
+    margin: 14px;
     position: relative;
+}
+#result .box-img {
+    overflow: hidden;
     width: 100%;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 100px solid #fff;
-
+    height: 196px;
+    padding: 21px 7px;
+}
+.box-img img {
+    height: 100%;
+}
+#result .box-icon {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-around;
+    padding-top: 7px;
+}
+#result .trapecio {
+    background-image: url("../icon/trapecio.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 28px;
+}
+.box-icon img {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+}
+#result p {
+    background: #fff;
+    text-transform: capitalize;
 }
