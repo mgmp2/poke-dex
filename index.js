@@ -5,11 +5,15 @@ const render = (root) => {
   const wrapper = $('<div class="wrapper container"></div>');
   wrapper.append(Header(_ => render(root)));
 
-  if(state.selectedPokemon == null ) {
       wrapper.append(Search( _ => {
           render(root);
       }));
-  }
+      if(state.selectedPokemon){
+          wrapper.append(detailsPokemon( _ => {
+              render(root);
+          }));
+
+      }
   root.append(wrapper);
 }
 const state = {
