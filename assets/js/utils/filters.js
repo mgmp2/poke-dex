@@ -4,11 +4,10 @@ const filterByPokemon = (pokemon,query) => {
     if (pokemon) {
 
         return pokemon.filter( x => {
-                      if(x.pokemon_species.name.toLowerCase().indexOf(query.toLowerCase()) != -1){
-                          return x;
-          } 	});
-
-
+              if(x.pokemon_species.name.toLowerCase().indexOf(query.toLowerCase()) != -1){
+                  return x;
+              }
+      });
   }
 }
     const filterGender =(name, female, male, genderless) => {
@@ -24,4 +23,13 @@ const filterByPokemon = (pokemon,query) => {
         });
 
          return genderFind;
+    }
+    const findType = () => {
+        let tipo ;
+         return state.detailsPokemon.types.forEach( x => {
+            if (x.type.name!=undefined) {
+                return tipo +=x.type.name;
+            }
+        });
+            return $('<span>'+tipo+'</span>');
     }

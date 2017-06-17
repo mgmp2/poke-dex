@@ -60,6 +60,10 @@ h1, h2 {
     header .fa-chevron-left {
       margin-right: 16px;
     }
+
+    h6 {
+        font-size: 1.4rem;
+    }
     /*RESULTADO*/
     #result {
         padding: 21px 70px;
@@ -87,29 +91,37 @@ h1, h2 {
       margin-top: 9%;
 
     }
+    #modal1 .row {
+        margin-bottom: 0;
+    }
     .modal {
+        top: 0!important;
         width: 90%!important;
+        max-height: 540px;
+    margin-top: 70px;
+    margin-left: 63px;
     }
     .modal-content {
         background: #edecec;
-        padding-right: 0;
-        padding-left: 0;
+        padding: 24px;
     }
     .modal .item {
         width: initial;
     }
     .modal .item .box-img {
         padding: 21px 44px;
-        height: auto;
+        height: 350px;
     }
 
     .modal .item .trapecio {
-        height: 49px;
+        height: 70px;
     }
     .modal .box-varietates {
         background-color: #36a4d3;
-        height: 175px;
+        height: 147px;
         padding: 14px;
+        line-height: 14px;
+        font-size: 14px;
     }
     .box-varietates * {
         display: block;

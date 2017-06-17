@@ -18,9 +18,9 @@ const informationPokemon = (pokemonImg, name, numId) => {
     const rowDescrip    = $('<div class="row"></div>');
     const colImg        = $('<div class="col s12 m5"></div>');
     const colDescrip    = $('<div class="col s12 m7"></div>');
-    const parrDescrip   = $('<h5>'+state.selectedPokemon.flavor_text_entries[3].flavor_text+'</h5>');
-    const boxDescripcion = $('<div class ="box-varietates"></div>');
-
+    const parrDescrip   = $('<h6>'+state.selectedPokemon.flavor_text_entries[3].flavor_text+'</h6>');
+    const boxDescripcion= $('<div class ="box-varietates"></div>');
+    const boxType       = $('<div class="box-type"></div>');
     colTitle.append(title);
     rowTitle.append(colTitle);
 
@@ -40,8 +40,12 @@ const informationPokemon = (pokemonImg, name, numId) => {
         state.detailsPokemon = rs;
         if (state.detailsPokemon) {
             colDescrip.append(detailsPokemon(name, boxDescripcion, state.selectedPokemon.genera[2].genus))
+            boxType.append(findType);
+            console.log(boxType);
+            colDescrip.append(boxType);
         }
     });
+
     return boxModal;
 }
 
@@ -63,14 +67,11 @@ const detailsPokemon = (name, box, categoria) => {
     box.append(colLeft);
     box.append(colRight);
 
-
     //Define the gender
     let define;
     if(name) {
         define = filterGender (name,state.genders.female, state.genders.male, state.genders.genderless);
     }
-
-
     colLeft.append(define);
     return box;
 }
