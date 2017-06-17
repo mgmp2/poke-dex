@@ -6,9 +6,9 @@
   margin:0px;
   padding:0px;
   box-sizing: border-box;
+  font-family: 'Flexo';
 }
 h1, h2 {
-  font-family: 'Flexo';
   text-transform: capitalize;
 }
 
@@ -102,11 +102,17 @@ h1, h2 {
         padding: 21px 44px;
         height: auto;
     }
-    .modal .trapecio .box-icon {
-
-    }
 
     .modal .item .trapecio {
         height: 49px;
+    }
+    .modal .box-varietates {
+        background-color: #36a4d3;
+        height: 175px;
+        padding: 14px;
+    }
+    .box-varietates * {
+        display: block;
+        color: #fff;
     }
 }

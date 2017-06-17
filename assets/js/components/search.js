@@ -9,7 +9,7 @@ const searchItem = (pokemon, update)  => {
     const pokebola  = $('<a class="waves-effect waves-light" href="#modal1"><img src="assets/icon/pokeball_gray.png" alt="pokeball"></a>');
     const heart     = $('<img src="assets/icon/valentines-heart.png" alt="valentines heart">');
     const data      = $('<img src="assets/icon/data.png" alt="data">');
-    const namePok       = $('<p class="center-align">'+pokemon.pokemon_species.name+'</p>');
+    const namePok    = $('<p class="center-align">'+pokemon.pokemon_species.name+'</p>');
     boxImg.append(anc);
     item.append(boxImg);
     boxIcon.append(pokebola);
@@ -27,7 +27,7 @@ const searchItem = (pokemon, update)  => {
             // update();
             if(state.selectedPokemon) {
                 let cloneImg = item.clone();
-                $('.modal-content').append(detailsPokemon(cloneImg, pokemon.pokemon_species.name));
+                $('.modal-content').append(informationPokemon(cloneImg, pokemon.pokemon_species.name, pokemon.entry_number));
                 $('#modal1 p').remove();
 
                 // item.append(createModal());

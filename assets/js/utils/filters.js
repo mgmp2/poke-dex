@@ -11,3 +11,17 @@ const filterByPokemon = (pokemon,query) => {
 
   }
 }
+    const filterGender =(name, female, male, genderless) => {
+        let genderFind;
+        female.filter(x => {
+            if (name == x.pokemon_species.name) { return genderFind = $('<span>Sexo: </span><i class="fa fa-venus"></i>'); }
+        });
+        male.filter(x => {
+            if (name == x.pokemon_species.name) { return genderFind = $('<span>Sexo: </span><i class="fa fa-mars"></i>');}
+        });
+        genderless.filter(x => {
+            if (name == x.pokemon_species.name) {return genderFind = $('<span>Sexo: </span><i class="fa fa-genderless"></i>');}
+        });
+
+         return genderFind;
+    }
