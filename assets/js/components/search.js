@@ -20,7 +20,7 @@ const searchItem = (pokemon, update)  => {
     pokebola.on('click', (e) => {
         $('.modal').modal();
         e.preventDefault();
-        console.log("touch");
+        console.log(pokemon.pokemon_species.url);
         $.get(pokemon.pokemon_species.url,(rs)=>{
             if(!rs) { return alert("NO EXISTE DETALLES DEL POKEMON");}
             state.selectedPokemon = rs;
@@ -29,7 +29,7 @@ const searchItem = (pokemon, update)  => {
                 let cloneImg = item.clone();
                 $('.modal-content').append(detailsPokemon(cloneImg, pokemon.pokemon_species.name));
                 $('#modal1 p').remove();
-                
+
                 // item.append(createModal());
             }
 

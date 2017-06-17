@@ -92,12 +92,15 @@ h1, h2 {
     }
     .modal-content {
         background: #edecec;
+        padding-right: 0;
+        padding-left: 0;
     }
     .modal .item {
         width: initial;
     }
     .modal .item .box-img {
         padding: 21px 44px;
+        height: auto;
     }
     .modal .trapecio .box-icon {
 

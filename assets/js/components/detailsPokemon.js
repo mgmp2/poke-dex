@@ -20,13 +20,15 @@ const detailsPokemon = (pokemonImg, name) => {
     const colTitle      = $('<div class="col m12"></div>');
     const title         = $('<h2 class="center-align">'+name+'</h2>');
     const rowDescrip    = $('<div class="row"></div>');
-    const colImg        = $('<div class="col m4"></div>');
-    const colDescrip    = $('<div class="col m8"></div>');
+    const colImg        = $('<div class="col s12 m4"></div>');
+    const colDescrip    = $('<div class="col s12 m8"></div>');
+    const parrDescrip   = $('<h5>'+state.selectedPokemon.flavor_text_entries[3].flavor_text+'</h5>');
     colTitle.append(title);
     rowTitle.append(colTitle);
 
     colImg.append(pokemonImg);
     rowDescrip.append(colImg);
+    colDescrip.append(parrDescrip);
     rowDescrip.append(colDescrip);
 
     boxModal.append(rowTitle);
