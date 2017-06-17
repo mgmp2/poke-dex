@@ -6,13 +6,8 @@ const render = (root) => {
   wrapper.append(Header(_ => render(root)));
 
   wrapper.append(Search( _ => { render(root); }));
-    //   if(state.selectedPokemon) {
-    //       wrapper.append(detailsPokemon( _ => {
-    //           render(root);
-    //       }));
-      //
-      //
-    //   }
+
+  wrapper.append(createModal());
   root.append(wrapper);
 }
 const state = {
@@ -31,6 +26,6 @@ $( _ => {
     const root = $('.root');
     render(root);
   });
-  
+
 
 });

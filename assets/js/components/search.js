@@ -18,22 +18,22 @@ const searchItem = (pokemon, update)  => {
     div.append(boxIcon);
 
     pokebola.on('click', (e) => {
+        $('.modal').modal();
         e.preventDefault();
         console.log("touch");
         $.get(pokemon.pokemon_species.url,(rs)=>{
             if(!rs) { return alert("NO EXISTE DETALLES DEL POKEMON");}
             state.selectedPokemon = rs;
             // update();
-
-        });
-        if(state.selectedPokemon) {
-            item.append(detailsPokemon());
-            if($('.modal').attr("class") == "modal"){
-                alert();
-                $('.modal').modal();
+            if(state.selectedPokemon) {
+                let cloneImg = item.clone();
+                $('.modal-content').append(detailsPokemon(cloneImg, pokemon.pokemon_species.name));
+                $('#modal1 p').remove();
+                
+                // item.append(createModal());
             }
 
-        }
+        });
         // console.log(state.selectedPokemon);
         // update();
 
