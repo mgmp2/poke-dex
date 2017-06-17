@@ -23,12 +23,22 @@ const detailsPokemon = (pokemonImg, name) => {
     const colImg        = $('<div class="col s12 m4"></div>');
     const colDescrip    = $('<div class="col s12 m8"></div>');
     const parrDescrip   = $('<h5>'+state.selectedPokemon.flavor_text_entries[3].flavor_text+'</h5>');
+    const boxVarietates = $('<div class ="boxVarietates"></div>');
+    const colBase        = $('<div class="col s12 m4"></div>');
+    const colType    = $('<div class="col s12 m8"></div>');
+    const categoria     = $('<span>Categoría: '+state.selectedPokemon.genera[2].genus+'</span>');
+
     colTitle.append(title);
     rowTitle.append(colTitle);
 
     colImg.append(pokemonImg);
     rowDescrip.append(colImg);
+    colBase.append(categoria);
+    colType.append(categoria);
+    boxVarietates.append(colBase);
+    boxVarietates.append(colType);
     colDescrip.append(parrDescrip);
+    colDescrip.append(boxVarietates);
     rowDescrip.append(colDescrip);
 
     boxModal.append(rowTitle);
