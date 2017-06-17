@@ -11,37 +11,31 @@ h1 {
   font-family: 'Flexo';.style-title
 }
 
-header .fa-chevron-left {
-  margin-right: 16px;
+.az{
+  background-color: #7aa44a ;
+  color:  #fff;
+  text-align: center;
 }
-#result {
-    padding: 21px 70px;
-}
+
 #result .item {
-    width: 133px;
-    display: inline-block;
     background: #e5e5e5;
     margin: 14px;
-    position: relative;
 }
 #result .box-img{
     position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 175px;
-    padding: 21px 7px;
+    height: 221px;
+    padding: 21px 63px;
 }
 #result .box-img a{
     position: absolute;
-    width: 100%;
-    height: 100%;
+    height: 80%;
 }
 .box-img img {
     height: 100%;
 }
 #result .box-icon {
     display: flex;
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     justify-content: space-around;
     padding-top: 7px;
@@ -50,25 +44,55 @@ header .fa-chevron-left {
     background-image: url("../icon/trapecio.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 28px;
+    height: 35px;
 }
 .box-icon img {
     display: inline-block;
-    width: 14px;
-    height: 14px;
+    width: 21px;
+    height: 21px;
 }
 #result p {
     background: #fff;
     text-transform: capitalize;
 }
 
-.az{
-  background-color: #7aa44a ;
-  width: 50px;
-  height: 20px;
-  color:  #fff;
-  text-align: center;
-  margin-left: 50%;
-  margin-top: 9%;
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    header .fa-chevron-left {
+      margin-right: 16px;
+    }
+    /*RESULTADO*/
+    #result {
+        padding: 21px 70px;
+    }
+    #result .item {
+        width: 133px;
+        display: inline-block;
+        position: relative;
+    }
+    #result .box-img{
+        overflow: hidden;
+        width: 100%;
+        height: 175px;
+        padding: 21px 7px;
+    }
+    #result .box-img a{
+        height: 80%;
+    }
+    #result .trapecio {
+        height: 28px;
+    }
+    .az{
+      width: 50px;
+      height: 20px;
+      margin-left: 50%;
+      margin-top: 9%;
+
+    }
+
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
 
 }
