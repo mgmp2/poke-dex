@@ -20,7 +20,7 @@ const informationPokemon = (pokemonImg, name, numId) => {
     const colDescrip    = $('<div class="col s12 m7"></div>');
     const parrDescrip   = $('<h6>'+state.selectedPokemon.flavor_text_entries[3].flavor_text+'</h6>');
     const boxDescripcion= $('<div class ="box-varietates"></div>');
-    const boxType       = $('<div class="box-type"></div>');
+    const boxType       = $('<div class="box-type-deb"></div>');
     const tipoP         = $('<p>Tipo: </p>');
     const debility         = $('<p>Debilidad: </p>');
     colTitle.append(title);
@@ -33,7 +33,7 @@ const informationPokemon = (pokemonImg, name, numId) => {
     colDescrip.append(boxDescripcion);
     rowDescrip.append(colDescrip);
     boxType.append(tipoP);
-    
+
     boxModal.append(rowTitle);
     boxModal.append(rowDescrip);
 
