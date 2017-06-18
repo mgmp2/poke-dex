@@ -2,7 +2,7 @@
 
 const searchItem = (pokemon, update)  => {
     const item      = $('<div class="item"></div>');
-    const boxImg    = $('<div class=box-img></div>')
+    const boxImg    = $('<div class="box-img center-align"></div>')
     const anc       = $('<img src="http://serebii.net/art/th/'+pokemon.entry_number+'.png" class="responsive-img"></a>');
     const div       = $('<div class="trapecio"></div>');
     const boxIcon   = $('<div class="box-icon"></div>');

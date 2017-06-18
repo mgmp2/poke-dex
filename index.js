@@ -14,7 +14,8 @@ const state = {
   pokemones: null,
   selectedPokemon: null,
   detailsPokemon: null,
-  genders: {female:null,male:null, genderless: null}
+  genders: {female:null,male:null, genderless: null},
+
 };
 
 $( _ => {

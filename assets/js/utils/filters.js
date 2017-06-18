@@ -24,12 +24,15 @@ const filterByPokemon = (pokemon,query) => {
 
          return genderFind;
     }
-    const findType = () => {
-        let tipo ;
-         return state.detailsPokemon.types.forEach( x => {
-            if (x.type.name!=undefined) {
-                return tipo +=x.type.name;
-            }
-        });
-            return $('<span>'+tipo+'</span>');
-    }
+    const findType = (detallePok) => {
+        let tipoPoke="";
+        detallePok.types.filter( x => {
+            if(x.type.name) {
+                console.log(x.type.name);
+                return tipoPoke = $('<span>'+x.type.name+'</span>');
+
+            } return tipoPoke;
+      });
+
+
+  }
