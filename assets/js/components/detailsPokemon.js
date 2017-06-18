@@ -32,7 +32,8 @@ const informationPokemon = (pokemonImg, name, numId) => {
     colDescrip.append(parrDescrip);
     colDescrip.append(boxDescripcion);
     rowDescrip.append(colDescrip);
-
+    boxType.append(tipoP);
+    
     boxModal.append(rowTitle);
     boxModal.append(rowDescrip);
 
@@ -44,9 +45,10 @@ const informationPokemon = (pokemonImg, name, numId) => {
         state.detailsPokemon = rs;
         if (state.detailsPokemon) {
             colDescrip.append(detailsPokemon(name, boxDescripcion, state.selectedPokemon.genera[2].genus))
-            // tipoPok = findType(state.detailsPokemon);
-            // boxType.append(tipoPok);
-            boxType.append(tipoP);
+            state.detailsPokemon.types.forEach( x => {
+                    const tipoPok = $('<span class="bg-'+x.type.name+'">'+x.type.name+'</span>');
+                    boxType.append(tipoPok);
+          });
             boxType.append(debility);
             colDescrip.append(boxType);
 
