@@ -14,4 +14,4 @@ Este proyecto se ha realizado con el uso de un pokeapi al cual se puede rescatar
 + Usar JSON formatter o Postman para obtener la información de PokeApi. (y poder entenderla)
 + PokeAPI no da imágenes de los pokemones, solo stats, esas tendrán que conseguir uno mismo 
 + Usae cualquier framework CSS
-+ Mostrar el detalle de Pokemon en un modal o en una tab dinámica. NO recargar l aágina para el detalle
++ Mostrar el detalle de Pokemon en un modal o en una tab dinámica. NO recargar la página para el detalle
