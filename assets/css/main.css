@@ -64,6 +64,16 @@ h1, h2 {
     h6 {
         font-size: 1.4rem;
     }
+
+    .bg-poison {
+    background-color: rgb(102, 164, 60)
+    }
+    .bg-bug {
+        background-color: rgb(157, 55, 159);
+    }
+    .bg-grass {
+        /*background-color: */
+    }
     /*RESULTADO*/
     #result {
         padding: 21px 70px;
@@ -123,11 +133,16 @@ h1, h2 {
         line-height: 14px;
         font-size: 14px;
     }
+    .box-type-deb p {
+        margin-top: 14px;
+        margin-bottom: 7px;
+    }
     .box-varietates * {
         display: block;
         color: #fff;
     }
     .box-type-deb span {
-        margin-right: 21px;
+        margin: 14px 7px;
+        padding: 7px 14px;
     }
 }
